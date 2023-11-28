@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Quicksand", sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: inline;
+        }
+
+        nav {
+            background-color: #c6004c;
+            padding: 5px;
+            position: sticky;
+            top: 0;
+        }
+
+        nav ul {
+            padding-inline: 4rem;
+
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav li {
+            list-style-type: none;
+        }
+
+        nav a {
+            font-size: 18px;
+            font-weight: 400;
+            text-decoration: none;
+            color: white;
+        }
+
+        nav a:hover {
+            font-weight: bold;
+            font-size: 17px;
+        }
+
+        main {
+            padding: 20px;
+
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        #content {
+            flex: 5;
+
+            display: flex;
+            flex-flow: column nowrap;
+            gap: 1rem 2rem;
+        }
+
+        aside {
+            flex: 1;
+        }
+
+        h2 {
+            color: #c6004c;
+        }
+
+        h3 {
+            color: #c6004c;
+        }
+        h4{
+            margin-top: 0px;
+        }
+
+        footer {
+            padding: 20px;
+            color: #fff;
+            background-color: #c600a5;
+        }
+
+        .jumbotron {
+            font-size: 20px;
+            padding: 60px;
+            background-color: #c600a5;
+            text-align: center;
+            color: white;
+        }
+
+        .profile header {
+            text-align: center;
+        }
+
+        .featured-image {
+            width: 100%;
+            max-height: 300px;
+
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .card {
+            box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            padding: 20px;
+        }
+
+        @media screen and (max-width: 1200px) {
+            main {
+                flex-flow: column nowrap;
+            }
+
+            main aside {
+                align-self: center;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            nav ul {
+                justify-content: center;
+            }
+
+            main aside {
+                align-self: stretch;
+            }
+        }
+    </style>
+    <body>
+        <header>
+            <div class="jumbotron">
+                <h1>Profile</h1>
+                <p>Berisikan profile diri sendiri</p>
+            </div>
+            <nav>
+                <ul class="nav">
+                    <li class="experience">
+                        <a href="#experience">Experience </a>
+                    </li>
+                    <li class="organisation">
+                        <a href="#organisation">Organisation </a>
+                    </li>
+                    <li class="skill">
+                        <a href="#skill"> Skill  </a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="content">
+                <article class="card" id="summary">
+                    <h1>Summary</h1>
+                    <p>
+                        I'm a fresh graduate from Information System, Andalas
+                        University. I'm a great desire to learn new things and
+                        highly motivated person. I have a strong Interest in
+                        Software Developer. My attention is to build and develop
+                        software using the PHP programming language using the
+                        Laravel framework. I desire to be a Software Developer
+                        with Laravel and AJAX.
+                    </p>
+                </article>
+                <article class="card" id="experience">
+                    <h1>Experience</h1>
+                    <p>
+                        <h4>PT Semen Padang - Padang, West Sumatera <u>Jul 2023 - Present </u> <i>( IT Support Internship)</i></h4>
+                        Hardware and Software Basic Installation <br />PC
+                        Troubleshooting and Repair <br />Built a full stack web
+                        Monitoring Service Air Conditioner Semen Padang Hospital
+                        using Figma, PHP, MySQL. (Website) <br />Developed using
+                        MVC architecture implemented CRUD, Cron Job and AJAX
+                        with Laravel Framework.
+                    </p>
+                    <p>
+                        <h4>Bangkit Academy - Bandung, West Java  <u>Feb 2022 - Jul 2022 </u> <i> (Mobile Development Student)</i></h4>
+                        Learn SOLID Paradigm,
+                        Basic Kotlin, Android Fundamental, Intermediate Android,
+                        Mobile UI/UX, Associate Android Developer Preparation,
+                        Soft Skill and Career Development <br />Built a final
+                        project Ripe.ai ( Application to detect the ripeness
+                        level of fruit ) using Figma, Kotlin, CNN, API, and
+                        Cloud. <br />Developed by Android Studio, Google
+                        Colaboration, and Google Cloud Platform.
+                    </p>
+                    <p>
+                        <h4>LPTIK UNAND - Padang, West Sumatera <u>Dec 2020 - Feb 2021</u><i> (Web Developer Intern)</i></h4>
+                        Built a full stack web domain
+                        creation application program for units that will create
+                        websites in Andalas University using Figma , PHP, and
+                        MySQL. <br />Developed using MVC architecture
+                        implemented CRUD with Laravel.
+                    </p>
+                </article>
+                <article class="card" id="organisation">
+                    <h1>Organisation</h1>
+                    <p>
+                        <h4>BEM KM FTI UNAND<u> Jan 2021 - Dec 2021 </u> <i>(Staff Bistech)</i> </h4>
+                        Plan and coordinate the purchase of goods and services needed
+                        by the faculty. Negotiating contracts with work
+                        partners. Selling goods and services digitally
+                    </p>
+                    <p>
+                        <h4>Laboratory of Business Inteligence <u>Aug 2021 - Aug 2022</u> <i>Research and Development Coordinator</i> </h4>
+                        Coordinating Research and development assistants related to the
+                        distribution of work programs that have been given
+                        Review the research and development assistant work
+                        program process and discuss any obstacles and
+                        achievements Create modules, tests, a grading system,
+                        and teach two classes about Business Intelligence with a
+                        total of 40 Information Systems students. Carrying out
+                        training and development of human resources for BI
+                        workforce assistants Giving student homework assessment
+                    </p>
+                    <p>
+                        <h4>Laboratory of Business Inteligence <u>Aug 2020 - Aug 2021</u> <i>Research and Development Staff</i> </h4>
+                        Create modules, tests, a grading system, and teach two classes about Business
+                        Intelligence with a total of 40 Information Systems
+                        students. Assisting lecturers in carrying out community
+                        service Giving student homework assessmen
+                    </p>
+                </article>
+                <article class="card" id="skill">
+<h1>Skill</h1>
+                    <p>
+                        <h4>Technical </h4>
+                        PHP | Javascript | HTML | CSS | SQL | MySQL | PostreSQL | Git | GitHub | Laravel | Java | Kotlin
+                    </p>
+                    <p>
+                        <h4>Concept</h4>
+                        Backend | Frontend | Full Stack | MVC | Data Structures and Algorithms | Databases | Object Oriented Development |
+Object Oriented Program | Network | Web | Mobile Development | Software Development
+                    </p>
+                </article>
+            </div>
+            <aside>
+                <article class="card profile">
+                    <header>
+                        <h2>Ringgo Sahara Agsya Lova</h2>
+                        <p>S-1 Sistem Informasi Universitasi Andalas</p>
+                        <figure>
+                            <img src="/public/black/img/foto.jpg" >
+                            <figcaption>ProfilePict</figcaption>
+                        </figure>
+                    </header>
+                    <section>
+                        <h3>Data Pribadi</h3>
+                        <table>
+                            <tr>
+                                <th>Nama</th>
+                                <td>Ringgo Sahara Agsya Lova</td>
+                            </tr>
+                            <tr>
+                                <th>Alamat</th>
+                                <td>Padang, Sumatera Barat</td>
+                            </tr>
+                            <tr>
+                                <th>TTL</th>
+                                <td>Guguk, 16 November 1999</td>
+                            </tr>
+                            <tr>
+                                <th>E-mail</th>
+                                <td>ringgoagsya12@gmail.com</td>
+                            </tr>
+                            <tr>
+                                <th>Hp</th>
+                                <td>081358805163</td>
+                            </tr>
+                        </table>
+                    </section>
+                </article>
+            </aside>
+        </main>
+    </body>
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="copyright">
+                &copy; made with &hearts;
+                <i class="tim-icons icon-heart-2"></i> by
+                <a
+                    href="https://www.linkedin.com/in/ringgoagsya/"
+                    target="_blank"
+                    >Ringgo Sahara Agsya Lova, S. Kom</a
+                >
+                &amp;
+                <a href="https://www.instagram.com/ringgoagsya/" target="_blank"
+                    >My Self</a
+                >
+                for a better web
+            </div>
+        </div>
+    </footer>
+</html>
+
